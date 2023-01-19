@@ -3,20 +3,20 @@ Implement an abstract data type "Stack of long integers" (LIFO)
 String representation of a stack (provided by toString method)
  must be ordered from bottom to top (tos is the last element).
 List of compulsory operations:
-Constructor for a new stack: LongStack()
-Copy of the stack: Object clone()
-Check whether the stack is empty: boolean stEmpty()
-Adding an element to the stack: void push (long a)
-Removing an element from the stack: long pop()
-Arithmetic operation s ( + - * / ) between two topmost elements
- of the stack (result is left on top): void op (String s)
-Reading the top without removing it: long tos()
-Check whether two stacks are equal: boolean equals (Object o)
-Conversion of the stack to string (top last): String toString()
+   Constructor for a new stack: LongStack()
+   Copy of the stack: Object clone()
+   Check whether the stack is empty: boolean stEmpty()
+   Adding an element to the stack: void push (long a)
+   Removing an element from the stack: long pop()
+   Arithmetic operation s ( + - * / ) between two topmost elements
+      of the stack (result is left on top): void op (String s)
+   Reading the top without removing it: long tos()
+   Check whether two stacks are equal: boolean equals (Object o)
+   Conversion of the stack to string (top last): String toString()
 
 Write a method
-public static long interpret (String pol)
-to calculate the value of an arithmetic expression pol in RPN
+    public static long interpret (String pol)
+ to calculate the value of an arithmetic expression pol in RPN
  (Reverse Polish Notation) using this stack type.
  Expression is a string which contains long integers (including negative
  and multi-digit numbers) and arithmetic operations + - * / separated
@@ -65,20 +65,20 @@ Realiseerida abstraktne andmetüüp "pikkade täisarvude magasin" (LIFO)
  ahela (linkedlist) abil. Magasini sõnena esitamisel olgu tipp lõpus
  (meetod toString() väljastab elemendid põhja poolt tipu poole).
 Operatsioonide loetelu:
-uue magasini konstruktor: LongStack()
-koopia loomine: Object clone()
-kontroll, kas magasin on tühi: boolean stEmpty()
-magasini elemendi lisamine: void push (long a)
-magasinist elemendi võtmine: long pop()
-aritmeetikatehe s ( + - * / ) magasini kahe pealmise elemendi vahel
- (tulemus pannakse uueks tipuks): void op (String s)
-tipu lugemine eemaldamiseta: long tos()
-kahe magasini võrdsuse kindlakstegemine: boolean equals (Object o)
-teisendus sõneks (tipp lõpus): String toString()
+   uue magasini konstruktor: LongStack()
+   koopia loomine: Object clone()
+   kontroll, kas magasin on tühi: boolean stEmpty()
+   magasini elemendi lisamine: void push (long a)
+   magasinist elemendi võtmine: long pop()
+   aritmeetikatehe s ( + - * / ) magasini kahe pealmise elemendi vahel
+      (tulemus pannakse uueks tipuks): void op (String s)
+   tipu lugemine eemaldamiseta: long tos()
+   kahe magasini võrdsuse kindlakstegemine: boolean equals (Object o)
+   teisendus sõneks (tipp lõpus): String toString()
 
 Koostada meetod signatuuriga
-public static long interpret (String pol)
-aritmeetilise avaldise pööratud poola kuju (sulgudeta postfikskuju,
+    public static long interpret (String pol)
+ aritmeetilise avaldise pööratud poola kuju (sulgudeta postfikskuju,
  Reverse Polish Notation) pol interpreteerimiseks (väljaarvutamiseks)
  eelpool defineeritud pikkade täisarvude magasini abil.
  Avaldis on antud stringina, mis võib sisaldada pikki täisarve
